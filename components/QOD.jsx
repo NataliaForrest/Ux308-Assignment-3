@@ -9,56 +9,56 @@ export default function() {
         pages: [{
             elements: [{
                 type: "radiogroup",
-                name: "civilwar",
-                title: "When was the American Civil War?",
+                name: "safetytraining",
+                title: "What is safety training in the workplace?",
                 choices: [
-                    "1796-1803", "1810-1814", "1861-1865", "1939-1945"
+                    "Employees just try and be safe while working", "A training program for employees to learn about precautionary processes and procedures", "A program where employees learn about politics", "None of these"
                 ],
-                correctAnswer: "1861-1865"
+                correctAnswer: "A training program for employees to learn about precautionary processes and procedures"
             }]
         }, {
             elements: [{
                 type: "radiogroup",
-                name: "libertyordeath",
-                title: "Whose quote is this: \"Give me liberty, or give me death\"?",
+                name: "hazardouschemicalsafetytraining",
+                title: "Hazardous Chemical Safety Training teaches employees about:",
                 choicesOrder: "random",
                 choices: [
-                    "John Hancock", "James Madison", "Patrick Henry", "Samuel Adams"
+                    "The general overview of chemical hazards", "Safety Data Sheets", "Exposure minimization", "All of these answers are correct"
                 ],
-                correctAnswer: "Patrick Henry"
+                correctAnswer: "All of these answers are correct"
             }]
         }, {
             elements: [{
                 type: "radiogroup",
-                name: "primeminister",
-                title: "Who is Canada's current Prime Minister?",
+                name: "WHMIS",
+                title: "What does WHMIS stand for?",
                 choicesOrder: "random",
                 choices: [
-                    "Stephen Harper", "Kim Campbell", "Justin Trudeau", "Jean Chrétien"
+                    "Workplace Hazardous Materials Information System", "Workshop High-Risk Materials Info Structure", "Workplace Harmful Matter Instruction Situation", "None of these"
                 ],
-                correctAnswer: "Justin Trudeau"
+                correctAnswer: "Workplace Hazardous Materials Information System"
             }]
         }, {
             elements: [{
                 type: "radiogroup",
-                name: "canadaprovinces",
-                title: "How many provinces are there in Canada?",
+                name: "personalsafety",
+                title: "The 4 P's of personal safety are: policy, procedure, plan, and practice.",
                 choicesOrder: "random",
                 choices: [
-                    "12", "15", "10", "5"
+                    "Yes", "No"
                 ],
-                correctAnswer: "10"
+                correctAnswer: "Yes"
             }]
         }, {
             elements: [{
                 type: "radiogroup",
-                name: "covid19",
-                title: "What year was COVID-19 first brought to light in Canada and USA?",
+                name: "goldenrule",
+                title: "What is the golden rule of safety?",
                 choicesOrder: "random",
                 choices: [
-                    "2019", "2010", "2023", "2021"
+                    "Work as safely with others as you would have them work with you", "I will follow the safety rules as I would have them followed", "Follow all safety instructions in order to keep a safe workplace", "All of these are acceptable"
                 ],
-                correctAnswer: "2019"
+                correctAnswer: "All of these are acceptable"
             }]
         }, {
             elements: [{
@@ -73,14 +73,9 @@ export default function() {
             }]
         }, {
             elements: [{
-                type: "radiogroup",
-                name: "workplacehazards",
-                title: "Which one of these arw NOT workplace hazards?",
-                choicesOrder: "random",
-                choices: [
-                    "Safety hazard", "Biological hazard", "Chemical hazard", "Money hazard"
-                ],
-                correctAnswer: "Money hazard"
+                type: "comment",
+                name: "personalexperience",
+                title: "In your personal experience, when was a time that a workplace felt unsafe to you? Or when was a time you felt extremely safe while working?",
             }]
         }, {
             elements: [{
@@ -107,16 +102,13 @@ export default function() {
         }, {
             elements: [{
                 type: "radiogroup",
-                name: "magnacarta",
-                title: "What is Magna Carta?",
+                name: "safetytraining",
+                title: "Is safety training required in Ontario?",
                 choicesOrder: "random",
                 choices: [
-                    "The foundation of the British parliamentary system",
-                    "The Great Seal of the monarchs of England",
-                    "The French Declaration of the Rights of Man",
-                    "The charter signed by the Pilgrims on the Mayflower"
+                    "Yes it is required", "No it is not","Its a choice made by the company","It doesn't even matter lol"
                 ],
-                correctAnswer: "The foundation of the British parliamentary system"
+                correctAnswer: "Yes it is required"
             }]
         }], 
         completedHtml: "<h4>You got <b>{correctAnswers}</b> out of <b>{questionCount}</b> correct answers.</h4>",
